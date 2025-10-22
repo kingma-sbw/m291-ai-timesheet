@@ -20,21 +20,19 @@ Anwendung KI ist erlaubt. Gute Prompts beinhalten:
 
 1. Projekt erstellen und Abhängigkeiten installieren:
 
-```bash
-npm install
-```
+    `npm install`
 
 2. Entwicklungsserver starten:
 
-```bash
-npm run dev
-```
+    `npm run dev`
 
 3. Für Produktion bauen:
 
-```bash
-npm run build
-```
+    `npm install`
+
+4. Für Produktion bauen:
+
+    `npm run build`
 
 ## Remarks by Deepseek
 
@@ -65,5 +63,3 @@ npm run build
     Proper error handling and loading states
 
     REST API integration following your documentation
-
-    Is there anything specific about the implementation you'd like me to explain or modify?
