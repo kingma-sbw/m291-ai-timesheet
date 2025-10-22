@@ -19,6 +19,33 @@ export default {
 </script>
 
 <style>
+:root {
+  --white: #ffffff;
+  --bg: #f5f5f5;
+  --text: #333333;
+
+  --primary: #667eea;
+  --primary-2: #764ba2;
+  --primary-hover: #5a6fd8;
+  --focus-shadow: rgba(102, 126, 234, 0.1);
+
+  --success: #48bb78;
+  --success-hover: #38a169;
+
+  --danger: #f56565;
+  --danger-hover: #e53e3e;
+
+  --card-bg: #ffffff;
+  --muted: #4a5568;
+  --border: #cbd5e0;
+
+  --error-bg: #fed7d7;
+  --error-text: #c53030;
+
+  --success-bg: #c6f6d5;
+  --success-text: #276749;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -26,9 +53,9 @@ export default {
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f5f5f5;
-  color: #333;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
 }
 
 #app {
@@ -36,8 +63,8 @@ body {
 }
 
 .app-header {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-2) 100%);
+  color: var(--white);
   padding: 1rem 2rem;
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
@@ -47,7 +74,7 @@ body {
 }
 
 .nav-link {
-  color: white;
+  color: var(--white);
   text-decoration: none;
   padding: 0.5rem 1rem;
   border-radius: 4px;
@@ -65,7 +92,7 @@ body {
 }
 
 .card {
-  background: white;
+  background: var(--card-bg);
   border-radius: 8px;
   padding: 1.5rem;
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -85,30 +112,30 @@ body {
 }
 
 .btn-primary {
-  background-color: #667eea;
-  color: white;
+  background-color: var(--primary);
+  color: var(--white);
 }
 
 .btn-primary:hover {
-  background-color: #5a6fd8;
+  background-color: var(--primary-hover);
 }
 
 .btn-success {
-  background-color: #48bb78;
-  color: white;
+  background-color: var(--success);
+  color: var(--white);
 }
 
 .btn-success:hover {
-  background-color: #38a169;
+  background-color: var(--success-hover);
 }
 
 .btn-danger {
-  background-color: #f56565;
-  color: white;
+  background-color: var(--danger);
+  color: var(--white);
 }
 
 .btn-danger:hover {
-  background-color: #e53e3e;
+  background-color: var(--danger-hover);
 }
 
 .form-group {
@@ -119,14 +146,14 @@ body {
   display: block;
   margin-bottom: 0.5rem;
   font-weight: bold;
-  color: #4a5568;
+  color: var(--muted);
 }
 
 .form-input,
 .form-select {
   width: 100%;
   padding: 0.5rem;
-  border: 1px solid #cbd5e0;
+  border: 1px solid var(--border);
   border-radius: 4px;
   font-size: 1rem;
 }
@@ -134,27 +161,27 @@ body {
 .form-input:focus,
 .form-select:focus {
   outline: none;
-  border-color: #667eea;
-  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px var(--focus-shadow);
 }
 
 .loading {
   text-align: center;
   padding: 2rem;
-  color: #667eea;
+  color: var(--primary);
 }
 
 .error {
-  background-color: #fed7d7;
-  color: #c53030;
+  background-color: var(--error-bg);
+  color: var(--error-text);
   padding: 1rem;
   border-radius: 4px;
   margin-bottom: 1rem;
 }
 
 .success {
-  background-color: #c6f6d5;
-  color: #276749;
+  background-color: var(--success-bg);
+  color: var(--success-text);
   padding: 1rem;
   border-radius: 4px;
   margin-bottom: 1rem;
